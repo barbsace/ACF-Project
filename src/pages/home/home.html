@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>
+      ACF
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="page-home">
+  <p style="text-align: center">
+    <ion-img src="assets/imgs/ACF.png" height="220px" width="220px"></ion-img>
+  </p>
+ <ion-list id="lbc">
+   <ion-item>
+     <ion-label floating color="secondary">Username/Email</ion-label>
+     <ion-input type="text" [(ngModel)]="username"></ion-input>
+   </ion-item>
+   <ion-item>
+     <ion-label floating color="secondary">Password</ion-label>
+     <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <p>
+    <button ion-button block color="secondary" (click) = "gotoforum()">Log In</button>
+  </p>
+  <p>
+    <button ion-button small color="secondary" (click)="regpage()">Sign up</button>
+  </p>
+ </ion-list>
+</ion-content>

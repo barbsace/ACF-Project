@@ -1,0 +1,101 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="page-register">
+  <div id="body">
+    <h1>Fill in the Register</h1>
+    <ion-item>
+      <ion-label floating color="secondary">First Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="secondary">Last Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="secondary">Username/Email</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating color="secondary">Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-5>
+          <ion-item>
+            <ion-label floating color="secondary">Gender</ion-label>
+            <ion-select [(ngModel)]="gender">
+              <ion-option value="m">Male</ion-option>
+              <ion-option value="f">Female</ion-option>
+            </ion-select>
+          </ion-item> 
+        </ion-col>
+        <ion-col col-2 style="background-color: red"></ion-col>
+        <ion-col col-5>
+            <ion-item>
+                <ion-label floating color="secondary">Date</ion-label>
+                <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+              </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col cpl-6>
+          <ion-list>
+            <ion-item>
+              <ion-label color="secondary">State of Origin</ion-label>
+              <ion-select [(ngModel)]="state" cancelText="Soke" okText="Yayi!">
+                <ion-option value="Kano">Kano</ion-option>
+                <ion-option value="Kaduna">Kaduna</ion-option>
+                <ion-option value="Katsina" >Katsina</ion-option>
+                <ion-option value="Jigawa">Jigawa</ion-option>
+                <ion-option value="Adamawa">Adamawa</ion-option>
+                <ion-option value="Jos">Jos</ion-option>
+                <ion-option value="Bauchi">Bauchi</ion-option>
+                <ion-option value="Yobe">Yobe</ion-option>
+                <ion-option value="Maiduguri">Maiduguri</ion-option>
+                <ion-option value="Sokoto">Sokoto</ion-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+        <ion-col cpl-6>
+          <ion-list>
+            <ion-item>
+              <ion-label color="secondary">Field of study</ion-label>
+              <ion-select [(ngModel)]="study" cancelText="Soke" okText="Yayi!">
+                <ion-option value="IT">IT</ion-option>
+                <ion-option value="Pharmacy">Pharmacy</ion-option>
+                <ion-option value="Physiotheraphy" >Physiotheraphy</ion-option>
+                <ion-option value="Jigawa">Jigawa</ion-option>
+                <ion-option value="Medical lab">Medical Lab</ion-option>
+                <ion-option value="Civil Engineering">Civil Engineering</ion-option>
+                <ion-option value="Electrical Engineering">Electrical Engineering</ion-option>
+                <ion-option value="Mechanical Engineering">Mechanical Engineering</ion-option>
+                <ion-option value="Computer Engineering">Computer Engineering</ion-option>
+                <ion-option value="Computer Science">Computer Science</ion-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <p>
+      <button ion-button block color="secondary">Register</button>
+    </p>
+  </div>
+</ion-content>
